@@ -28,7 +28,7 @@ classdef Session < handle & mlxnat.XnatType
         
         %%
         
-        function dt = datetime(this)            
+        function dt = datetime(this)
             if (isempty(this.sessionDetails_))
                 dt = NaT;
                 return
