@@ -17,7 +17,7 @@ classdef (Abstract) ProjectKit < handle
 	methods (Static)
         function obj = CreateProject(varargin)
             ip = inputParser;
-            addParameter(ip, 'studyArm', '', @ischar);
+            addParameter(ip, 'projectDetails', [], @ischar);
             parse(ip, varargin{:});
             
             obj = [];
