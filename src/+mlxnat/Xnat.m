@@ -11,8 +11,8 @@ classdef Xnat
         subject
         session
         scan
-        resource
-        assessor 		
+        resources
+        assessors 		
  	end
 
 	methods 
@@ -31,10 +31,10 @@ classdef Xnat
         function g = get.scan(this)
             g = this.scan_;
         end
-        function g = get.resource(this)
+        function g = get.resources(this)
             g = this.resource_;
         end
-        function g = get.assessor(this)
+        function g = get.assessors(this)
             g = this.assessor_;
         end
 		  
