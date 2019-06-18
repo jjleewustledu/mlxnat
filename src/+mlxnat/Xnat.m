@@ -1,5 +1,12 @@
 classdef Xnat 
-	%% XNAT  
+	%% XNAT specifies a class for data structured for XNAT (xnat.org).  The XNAT data hierarchy is:
+    %  Project -> Subject -> Session;
+    %  Session -> {Scan, Assessor};
+    %  {Project, Subject, Session, Scan, Assessor} -> Resource.
+    %  
+    %  See also sections "Deriving values" and "XNAT object properties" in 
+    %  "Command - Container Service - XNAT Documentation Wiki - Container Service - XNAT Documentation Wiki - JJL.pdf"
+    %  in /Users/jjlee/MATLAB-Drive/mlpipeline/doc
 
 	%  $Revision$
  	%  was created 17-Dec-2018 13:27:10 by jjlee,
